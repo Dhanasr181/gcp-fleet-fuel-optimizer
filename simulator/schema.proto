@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package fleet.telemetry;
+
+message VehicleTelemetry {
+  string vehicle_id = 1;
+  string timestamp = 2;
+  double latitude = 3;
+  double longitude = 4;
+  double speed_kmh = 5;
+  int32 rpm = 6;
+  double throttle_pct = 7;
+  double fuel_flow_lph = 8;
+  bool brake_event = 9;
+  double brake_force_pct = 10;
+  double braking_distance_m = 11;
+  double acceleration_ms2 = 12;
+  double load_weight_kg = 13;
+  double engine_temp_c = 14;
+  int32 idle_duration_secs = 15;
+  string gear_position = 16;
+  double road_grade_pct = 17;
+}
